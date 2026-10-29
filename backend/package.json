@@ -1,0 +1,40 @@
+{
+  "name": "srm",
+  "version": "1.0.0",
+  "description": "Smart Rent System - A MERN Stack Application",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server.js",
+    "start": "node server.js",
+    "dev": "concurrently \"nodemon server.js\" \"cd ../frontend && npm run dev\"",
+    "seed": "node init/seed.js",
+    "lint": "node --check server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^1.40.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.10.0",
+    "helmet": "^8.1.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.13.2",
+    "multer": "^1.4.5-lts.2",
+    "multer-storage-cloudinary": "^4.0.0",
+    "nodemailer": "^6.10.0",
+    "pdfkit": "^0.16.0",
+    "resend": "^4.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.0"
+  }
+}
